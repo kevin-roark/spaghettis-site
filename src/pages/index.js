@@ -4,7 +4,7 @@ import { css, keyframes } from 'emotion'
 import LoopVideo from '../components/loop-video'
 import VideoLogo from '../components/video-logo'
 
-const breakpoint1 = `max-width: 1296px`
+const breakpoint1 = `max-width: 1248px`
 
 const bgVideo = css`
   position: fixed;
@@ -61,6 +61,7 @@ const content = css`
   color: #fff;
   animation: ${contentTextColor} 12s ease infinite;
   text-shadow: 1px 2px #000;
+  word-break: break-word;
 
   & *::selection {
     color: #f00;
@@ -87,7 +88,16 @@ const content = css`
   }
 
   @media (max-width: 800px) {
-    font-size: 32px;
+    font-size: 28px;
+    margin-bottom: 24px;
+
+    & p {
+      padding: 0 0 30px 0;
+    }
+  }
+
+  @media (max-width: 600px) {
+    max-width: 100%;
   }
 `
 
@@ -101,7 +111,7 @@ const primaryContent = css`
   }
 `
 
-const title = css`
+const emphasize = css`
   background: #000;
   color: #fff;
 `
@@ -127,26 +137,31 @@ const IndexPage = () => {
 
       <div className={primaryContent}>
         <p>
-          <span className={title}>Spaghetti's</span> is an Italian supper club
-          in {}
+          <span className={emphasize}>Spaghetti's</span> is {}
           <a target="_blank" href={nycGoogleMaps}>
-            New York City
-          </a>.
+            New York City's
+          </a>. finest Italian Supper Club.
         </p>
       </div>
 
       <div className={content}>
         <p>
-          Hello, welcome to the <span className={title}>Spaghetti's</span>{' '}
-          website. Twice a month, we invite friends to feast Italian-style in my
+          Hello, welcome to the <span className={emphasize}>
+            Spaghetti's
+          </span>{' '}
+          website. On occasion, we invite friends to feast Italian-style in my
           home. And for that night, you're family.
         </p>
 
         <p>
-          The first <span className={title}>Spaghetti's</span> supper
+          The first <span className={emphasize}>Spaghetti's</span> supper
           <span className={version}> (VERSION 0) </span>
-          is a small fee-free invite-only test-run. If you are on this website
-          you are invited. RSVP for the special Italian dinner by emailing: {}
+          is a small fee-free friends-invite-only test-run. If you are on this
+          website you are invited. It will be held on {}
+          <span className={emphasize}>Friday, October 13 (2017) at 8PM</span> {}
+          at <span className={emphasize}>857 Park Pl, Apt 1, Brooklyn</span>.
+          The dress code is "big suit" or "red dress". RSVP for the special
+          Italian dinner by emailing: {}
           <a
             target="_blank"
             href="mailto:kevin.e.roark@gmail.com&subject=Spaghettis+Reservation"

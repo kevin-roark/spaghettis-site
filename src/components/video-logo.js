@@ -8,6 +8,11 @@ const container = css`
   position: relative;
   width: 600px;
   height: 337.5px;
+
+  @media (max-width: 600px) {
+    height: auto;
+    padding-bottom: 56.25%;
+  }
 `
 
 const videoTextBase = css`
