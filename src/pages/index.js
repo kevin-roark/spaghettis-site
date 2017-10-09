@@ -171,7 +171,7 @@ const IndexPage = () => {
           Italian dinner by emailing: {}
           <a
             target="_blank"
-            href="mailto:kevin.e.roark@gmail.com&subject=Spaghettis+Reservation"
+            href="mailto:kevin.e.roark@gmail.com?subject=Spaghettis Reservation"
           >
             kevin.e.roark@gmail.com
           </a>
