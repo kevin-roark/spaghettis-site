@@ -3,6 +3,7 @@ import { css, keyframes } from 'emotion'
 
 import LoopVideo from '../components/loop-video'
 import VideoLogo from '../components/video-logo'
+import RepeatingImage from '../components/repeating-image'
 
 const breakpoint1 = `max-width: 1248px`
 
@@ -131,6 +132,8 @@ const IndexPage = () => {
   const nycGoogleMaps =
     'https://www.google.com/maps/place/New+York,+NY/@40.6976633,-74.120106,11z/data=!3m1!4b1!4m5!3m4!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7134248!4d-74.0055245'
 
+  const garlicBreadImg = '/images/garlic-bread.jpg'
+
   return (
     <div className={container}>
       <VideoLogo videoSrc={textVideoSrc} className={logo} />
@@ -151,6 +154,10 @@ const IndexPage = () => {
           </span>{' '}
           website. On occasion, we invite friends to feast Italian-style in my
           home. And for that night, you're family.
+        </p>
+
+        <p>
+          <RepeatingImage src={garlicBreadImg} />
         </p>
 
         <p>
