@@ -31,27 +31,20 @@ const IndexPage = () => {
       </p>
 
       <p>
-        The second <span className={emphasize}>Spaghetti's</span> supper
-        <span className={version}> (V1) </span>
-        will be held on {}
-        <span className={emphasize}>Friday, November 3 (2017) at 8PM</span> {}
+        The first <span className={emphasize}>Spaghetti's</span> supper
+        <span className={version}> (VERSION 0) </span>
+        is a small fee-free friends-invite-only test-run. If you are on this
+        website you are invited. It will be held on {}
+        <span className={emphasize}>Friday, October 13 (2017) at 8PM</span> {}
         at <span className={emphasize}>857 Park Pl, Apt 1, Brooklyn</span>.
-        The dress code this time is "pin stripe." RSVP for the special
+        The dress code is "big suit" or "red dress". RSVP for the special
         Italian dinner by emailing: {}
         <a
           target="_blank"
           href="mailto:kevin.e.roark@gmail.com?subject=Spaghettis Reservation"
         >
           kevin.e.roark@gmail.com
-        </a>.
-      </p>
-
-      <p>
-        Archive of previous <span className={emphasize}>Spaghetti's</span>
-        suppers:
-        <ul>
-          <li className={version}><Link to={'v0'}>V0 - 10/13/17</Link></li>
-        </ul>
+        </a>
       </p>
     </div>
   )

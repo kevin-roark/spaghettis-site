@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 const LoopVideo = ({ src, className, style }) => {
   const videoRef = video => {
+    if (!video) return
     video.addEventListener('ended', () => {
       video.pause()
       video.currentTime = 0
