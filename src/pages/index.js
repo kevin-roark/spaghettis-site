@@ -14,7 +14,7 @@ const version = css`
 `
 
 const IndexPage = () => {
-  const garlicBreadImg = '/images/garlic-bread.jpg'
+  const repeatingImgSrc = '/images/spaghetti-array.jpg'
 
   return (
     <div>
@@ -27,7 +27,7 @@ const IndexPage = () => {
       </p>
 
       <p>
-        <RepeatingImage src={garlicBreadImg} />
+        <RepeatingImage src={repeatingImgSrc} />
       </p>
 
       <p>
@@ -36,7 +36,8 @@ const IndexPage = () => {
         will be held on {}
         <span className={emphasize}>Friday, November 3 (2017) at 8PM</span> {}
         at <span className={emphasize}>857 Park Pl, Apt 1, Brooklyn</span>.
-        The dress code this time is "pin stripe." RSVP for the special
+        The dress code this time is "pin stripe" or "gold chain." The menu will not be the same.
+        RSVP for the special
         Italian dinner by emailing: {}
         <a
           target="_blank"
