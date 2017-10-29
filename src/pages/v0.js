@@ -36,9 +36,9 @@ const IndexPage = () => {
         is a small fee-free friends-invite-only test-run. If you are on this
         website you are invited. It will be held on {}
         <span className={emphasize}>Friday, October 13 (2017) at 8PM</span> {}
-        at <span className={emphasize}>857 Park Pl, Apt 1, Brooklyn</span>.
-        The dress code is "big suit" or "red dress". RSVP for the special
-        Italian dinner by emailing: {}
+        at <span className={emphasize}>857 Park Pl, Apt 1, Brooklyn</span>. The
+        dress code is "big suit" or "red dress". RSVP for the special Italian
+        dinner by emailing: {}
         <a
           target="_blank"
           href="mailto:kevin.e.roark@gmail.com?subject=Spaghettis Reservation"

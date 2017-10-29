@@ -22,7 +22,7 @@ const IndexPage = () => {
         Hello, welcome to the <span className={emphasize}>
           Spaghetti's
         </span>{' '}
-        website. On occasion, we invite friends to feast Italian-style in my
+        website. On occasion, we invite friends to feast Italian-style in our
         home. And for that night, you're family.
       </p>
 
@@ -35,10 +35,10 @@ const IndexPage = () => {
         <span className={version}> (V1) </span>
         will be held on {}
         <span className={emphasize}>Friday, November 3 (2017) at 8PM</span> {}
-        at <span className={emphasize}>857 Park Pl, Apt 1, Brooklyn</span>.
-        The dress code this time is "pin stripe" or "gold chain." The menu will not be the same.
-        RSVP for the special
-        Italian dinner by emailing: {}
+        at <span className={emphasize}>857 Park Pl, Apt 1, Brooklyn</span>. The
+        dress code this time is "pin stripe unbuttoned" or "gold chain on top."
+        The menu will not be the same as last time. The performances will be
+        different too. RSVP for the special Italian dinner by emailing: {}
         <a
           target="_blank"
           href="mailto:kevin.e.roark@gmail.com?subject=Spaghettis Reservation"
@@ -51,7 +51,9 @@ const IndexPage = () => {
         Archive of previous <span className={emphasize}>Spaghetti's</span>
         suppers:
         <ul>
-          <li className={version}><Link to={'v0'}>V0 - 10/13/17</Link></li>
+          <li className={version}>
+            <Link to={'v0'}>V0 - 10/13/17</Link>
+          </li>
         </ul>
       </p>
     </div>

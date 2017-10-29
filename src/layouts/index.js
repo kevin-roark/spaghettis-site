@@ -158,13 +158,12 @@ const TemplateWrapper = ({ children }) => (
           <span className={emphasize}>Spaghetti's</span> is {}
           <a target="_blank" href={nycGoogleMaps}>
             New York City's
-          </a>. finest Italian Supper Club.
+          </a>{' '}
+          finest Italian Supper Club.
         </p>
       </div>
 
-      <div className={content}>
-        {children()}
-      </div>
+      <div className={content}>{children()}</div>
 
       <LoopVideo className={bgVideo} style={bgVideoStyle} src={bgVideoSrc} />
     </div>
